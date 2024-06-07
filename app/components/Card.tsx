@@ -6,10 +6,11 @@ import CardFooter from './cardFooter'
 import laurasmith from '../../public/images/laurasmith.png'
 
 interface display{
-    style: string
+    style: string,
+    block: string
 }
 
-const Card = ({style}: display) => {
+const Card = ({style, block}: display) => {
   return (
     <div className='bg-[#1A1B21] w-[30%] text-white rounded-lg mb-5'>
         <Image src={laurasmith} alt="smith" className='object-cover w-[100%] mb-6' />
@@ -30,7 +31,7 @@ const Card = ({style}: display) => {
         <h2 className='text-lg md:font-bold mb-3'>Interest</h2>
         <p className='text-sm'>Food expert. Music scholar. Reader. Internet fanatic. Bacon buff. Entrepreneur. Travel geek. Pop culture ninja. Coffee fanatic.</p>
         </div>
-        <CardFooter display='hidden'/>
+        <CardFooter display={`${block}`}/>
     </div>
   )
 }
