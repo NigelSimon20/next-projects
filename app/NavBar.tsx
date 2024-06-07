@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { FaBug } from "react-icons/fa6"
 import React from 'react'
 
 const NavBar = () => {
@@ -11,12 +10,11 @@ const NavBar = () => {
         {label: 'Quiz Generator', href: '/quiz-generator'},
     ]
   return (
-    <nav className='flex space-x-6 border-b mb-5 px-5 h-14 items-center justify-center bg-black'>
-        <Link href="/"><FaBug /></Link>
-        <ul className='flex space-x-6 '>
+    <nav className='flex space-x-6 border-b py-5 px-5 h-14 items-center justify-center bg-black'>
+        <ul className='flex space-x-6'>
             {links.map(link => <Link 
             key={link.href} 
-            className='text-zinc-500 hover:text-zinc-800 transition-colors' 
+            className='text-zinc-200 hover:text-zinc-500 transition-colors' 
             href={link.href}>{link.label}</Link>)}
         </ul>
     </nav>
