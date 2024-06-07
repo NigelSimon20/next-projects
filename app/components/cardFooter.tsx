@@ -9,9 +9,9 @@ import {
 
 const CardFooter = () => {
   return (
-    <div className='flex bg-[#161619] py-16'>
+    <div className='flex bg-[#161617] py-16'>
         <div className='bg-[#918E9B] h-10 w-10'>
-            <FaTwitter />
+            <FaTwitter className='text-[40px]'/>
         </div>
     </div>
   )
