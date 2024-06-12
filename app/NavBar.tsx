@@ -5,8 +5,8 @@ const NavBar = () => {
     const links = [
         {label: 'Business Cards', href: '/'},
         {label: 'Travel Journal', href: '/travel-journal'},
+        {label: 'Airbnb', href: '/AirBnb'},
         {label: 'Tenzies', href: '/tenzies'},
-        {label: 'Van Life', href: '/vanlife'},
         {label: 'Quiz Generator', href: '/quiz-generator'},
     ]
   return (

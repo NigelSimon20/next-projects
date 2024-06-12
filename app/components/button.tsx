@@ -1,5 +1,4 @@
 import React from 'react'
-import { FaBug } from "react-icons/fa6"
 
 interface ButtonProps{
     text : string,

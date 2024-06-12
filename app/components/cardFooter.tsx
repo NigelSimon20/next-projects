@@ -4,8 +4,7 @@ import {
     FaFacebookF,
     FaInstagram,
     FaGithub,
-    FaLinkedinIn,
-    FaLinkedin
+    FaLinkedinIn
     } from 'react-icons/fa6'
 
     interface linkedDisplay{
