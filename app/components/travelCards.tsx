@@ -16,8 +16,8 @@ interface CardDetails{
 
 const TravelCard = ({cardimg, cardsubtitle, cardlink, carddate, cardtext, cardtitle}: CardDetails) => {
   return (
-    <div className='flex justify-evenly items-center mx-40 border-b py-8'>
-        <Image src={cardimg} alt="pic" className='h-[350px] w-[250px] object-cover mr-20 rounded-lg'/>
+    <div className='px-5 md:flex justify-evenly items-center md:mx-10 lg:mx-40 border-b py-8'>
+        <Image src={cardimg} alt="pic" className='w-[100%] mb-4 md:h-[350px] md:w-[250px] object-cover md:mr-20 rounded-lg md:mb-0'/>
         <div>
             <div className="flex items-center mb-2">
             <FaLocationDot className='text-[#F55A5A] text-[20px] mr-2'/>

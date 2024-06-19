@@ -12,7 +12,7 @@ interface display{
 
 const Card = ({style, block}: display) => {
   return (
-    <div className='bg-[#1A1B21] w-[30%] text-white rounded-lg mb-5'>
+    <div className='bg-[#1A1B21] md:w-[40%] lg:w-[30%] text-white rounded-lg mb-5'>
         <Image src={laurasmith} alt="smith" className='object-cover w-[100%] mb-6' />
         <div className='px-10'>
         <h1 className='text-center mb-2 md:font-bold text-2xl'>Laura Smith</h1>
@@ -22,7 +22,7 @@ const Card = ({style, block}: display) => {
         <div className="flex space-x-9 justify-center mb-5">
         <Button text='Email' bgColor='black' color='white' />
          <div className={`${style}`}>
-         <Button text='LinkedIn' bgColor='black' color='black' />
+         <Button text='LinkedIn' bgColor='black' color='white' />
          </div>
         </div>
 
