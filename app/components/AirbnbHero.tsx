@@ -1,11 +1,13 @@
 import React from 'react'
-import Image from 'next/image'
-import one from '../../public/images/laurasmith.png'
+import Image, { StaticImageData } from 'next/image'
 
+interface Image{
+  img: StaticImageData,
+}
 
-const AirbnbHero = () => {
+const AirbnbHero = ({img} : Image) => {
   return (
-    <Image src={one} alt="image" className='h-[250px] w-[200px] object-cover mb-5 rounded-lg' />
+    <Image src={img} alt="image" className='w-[100%] md:h-[250px] md:w-[200px] object-cover mb-5 rounded-lg' />
   )
 }
 
