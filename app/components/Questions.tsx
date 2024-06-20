@@ -10,6 +10,15 @@ interface QuestionObject {
   selectedAnswer: string;
 }
 
+interface Question{
+  category: string;
+  type: string;
+  difficulty: string;
+  question: string;
+  correct_answer: string;
+  incorrect_answers: string[];
+}
+
 const Questions: FunctionComponent = () => {
   const [questions, setQuestions] = useState<any[]>([]);
   const [questionsAndAnswers, setQuestionsAndAnswers] = useState<QuestionObject[]>([]);
@@ -108,6 +117,11 @@ const Questions: FunctionComponent = () => {
 
   return (
     <div>
+
+      {questions?.length === 0 && (
+        <p>Loading Questions, If it takes long check your internet connection</p>
+      )}
+
       <div className="questions-container">{questionsElements}</div>
 
       <div className="text-center">
@@ -117,14 +131,16 @@ const Questions: FunctionComponent = () => {
           </p>
         )}
 
-        {questions && questions.length > 0 && !showResult && (
-        <button
-            className="check-btn bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      {!showResult &&(
+          <button
+            className="check-btn bg-[#4D5B9E] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
             onClick={checkAnswers}
-        >
+            >
             Check answers
         </button>
-        )}
+      )
+      }
+        
 
       </div>
 

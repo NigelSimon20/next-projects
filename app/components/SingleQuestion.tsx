@@ -44,7 +44,7 @@ const SingleQuestion: React.FC<SingleQuestionProps> = ({
       <button
         key={index}
         onClick={() => clickAnswer(answer, question)}
-        className={`${buttonClassName} rounded-lg px-4 py-2 mb-2`}
+        className={`${buttonClassName} rounded-2xl px-4 py-1 mb-2 mr-6`}
         disabled={showResult}
       >
         {decode(answer)}
@@ -53,8 +53,8 @@ const SingleQuestion: React.FC<SingleQuestionProps> = ({
   });
 
   return (
-    <div className="question-container">
-      <h1 className="question">{decode(question)}</h1>
+    <div className="question-container mx-[20px] md:mx-[100px] mb-6 border-b mt-10 pb-[15px]">
+      <h1 className="question text-[#293264] mb-[20px] font-bold text-[18px]">{decode(question)}</h1>
       <div className="answers-btn-container">{answersElements}</div>
     </div>
   );

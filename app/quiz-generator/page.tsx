@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import OpenScreen from '../components/OpenScreen';
-
+import Questions from '../components/Questions';
 
 const quizGenerator = () => {
   const [showQuestions, setShowQuestions] = useState(false);
@@ -13,7 +13,7 @@ const quizGenerator = () => {
       {!showQuestions ? (
         <OpenScreen setShowQuestions={setShowQuestions} />
       ) : (
-        <Link href="/quiz">Take Quiz</Link>
+        <Link href=""><Questions /></Link>
       )}
     </div>
   );
