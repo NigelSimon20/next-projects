@@ -6,13 +6,23 @@ import {Autoplay} from 'swiper/modules';
 import SwiperCore from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import one from '../../public/images/laurasmith.png'
+import one from '../../public/images/1.jpg'
+import two from '../../public/images/2.jpg'
+import three from '../../public/images/3.jpg'
+import four from '../../public/images/4.jpg'
+import five from '../../public/images/5.jpg'
+import six from '../../public/images/6.jpg'
+import seven from '../../public/images/7.jpg'
+import eight from '../../public/images/8.jpg'
+import nine from '../../public/images/9.jpg'
 import AirbnbHero from '../components/AirbnbHero'
 import logo from '../../public/images/airbnb-logo.png'
 import AirbnbCards from '../components/AirbnbCards'
-import wedding from '../../public/images/wedding.png'
+import wedding from '../../public/images/wedd.jpg'
+import bike from '../../public/images/bike.jpg'
+import slidd from '../../public/images/slidd.jpg'
+import swim from '../../public/images/swim.jpg'
 
-SwiperCore.use([Autoplay]);
 
 const AirBnb = () => {
   return (
@@ -24,20 +34,20 @@ const AirBnb = () => {
     <div className="md:flex items-center justify-center md:space-x-5 text-center px-5">
       <AirbnbHero img={one}/>
       <div>
-      <AirbnbHero img={one}/>
-      <AirbnbHero img={one}/>
+      <AirbnbHero img={two}/>
+      <AirbnbHero img={three}/>
       </div>
       <div className='md:mt-40'>
-      <AirbnbHero img={one}/>
-      <AirbnbHero img={one}/>
+      <AirbnbHero img={four}/>
+      <AirbnbHero img={five}/>
       </div>
       <div>
-      <AirbnbHero img={one}/>
-      <AirbnbHero img={one}/>
+      <AirbnbHero img={six}/>
+      <AirbnbHero img={seven}/>
       </div>
       <div className='md:mt-40'>
-      <AirbnbHero img={one}/>
-      <AirbnbHero img={one}/>
+      <AirbnbHero img={eight}/>
+      <AirbnbHero img={nine}/>
       </div>
     </div>
 
@@ -71,7 +81,7 @@ const AirBnb = () => {
 
 <SwiperSlide>
 <AirbnbCards 
-      image={wedding}
+      image={swim}
       buttontext='SOLD OUT'
       rating='5.0'
       quantity={6}
@@ -97,7 +107,7 @@ const AirBnb = () => {
 
 <SwiperSlide>
 <AirbnbCards 
-      image={wedding}
+      image={bike}
       buttontext='SOLD OUT'
       rating='5.0'
       quantity={6}
@@ -110,7 +120,7 @@ const AirBnb = () => {
 
 <SwiperSlide>
 <AirbnbCards 
-      image={wedding}
+      image={slidd}
       buttontext='ONLINE'
       rating='5.0'
       quantity={6}

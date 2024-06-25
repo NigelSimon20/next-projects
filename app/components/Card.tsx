@@ -15,9 +15,9 @@ const Card = ({style, block}: display) => {
     <div className='bg-[#1A1B21] md:w-[40%] lg:w-[30%] text-white rounded-lg mb-5'>
         <Image src={laurasmith} alt="smith" className='object-cover w-[100%] mb-6' />
         <div className='px-10'>
-        <h1 className='text-center mb-2 md:font-bold text-2xl'>Laura Smith</h1>
-        <p className='text-orange-300 text-center mb-2 text-sm'>Frontend Developer</p>
-        <Link href='/' className='text-center mb-6 block text-sm'>laurasmith.website</Link>
+        <h1 className='text-center mb-2 md:font-bold text-2xl'>Nigel Simon</h1>
+        <p className='text-orange-300 text-center mb-2 text-sm'>Software Engineer</p>
+        <Link href='/' className='text-center mb-6 block text-sm'>NigelSimon.com</Link>
 
         <div className="flex space-x-9 justify-center mb-5">
         <Button text='Email' bgColor='black' color='white' />
