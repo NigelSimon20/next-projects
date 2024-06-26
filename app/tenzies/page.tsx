@@ -1,6 +1,8 @@
 'use client';
+
 import React, { useEffect, useState } from 'react'
 import TenziButton from '../components/TenzieButton';
+import router from 'next/router';
 
 const Tenzies = () => {
   function randomNumber(min: number = 1, max: number = 6) {
@@ -27,6 +29,10 @@ const Tenzies = () => {
     setSquares(generateTenziValues());
   }
 
+  const reloadPage = () => {
+    reload();
+  };
+
   return (
     <div className="flex items-center justify-center mt-[100px]">
       <div className="flex items-center justify-center bg-[#0B2434] h-[32rem] w-[32rem]">
@@ -38,13 +44,20 @@ const Tenzies = () => {
               <TenziButton value={squares.value} key={squares.id} />
             ))}
           </div>
-
+          <div className="flex">
           <button
             onClick={ handleRoll}
-            className="bg-[#5035FF] pt-3 pb-3 pl-10 pr-10 rounded-[7px]  text-white  font-medium text-[1.2rem] "
+            className="bg-[#5035FF] pt-3 pb-3 pl-10 pr-10 rounded-[7px]  text-white  font-medium text-[1.2rem] mr-[20px]"
           >
             Roll
           </button>
+          <button
+            onClick={() => window.location.reload()}
+            className="bg-[#5035FF] pt-3 pb-3 pl-10 pr-10 rounded-[7px]  text-white  font-medium text-[1.2rem] "
+          >
+            new
+          </button>
+          </div>
         </div>
       </div>
     </div>
@@ -52,3 +65,7 @@ const Tenzies = () => {
 }
 
 export default Tenzies
+
+function reload() {
+  throw new Error('Function not implemented.');
+}
